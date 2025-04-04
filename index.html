@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nike Product Showcase</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: url('https://images.unsplash.com/photo-1600180758890-6d24b9c1f39e?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .search-sort-bar {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .product-card h3, .product-card p {
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #f5f5f5;
+      color: black;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .footer {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    video {
+      width: 100%;
+      max-height: 300px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nike Product Showcase</h1>
+  </header>
+
+  <nav>
+    <div><strong>Nike</strong></div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Sale</a></li>
+    </ul>
+  </nav>
+
+  <div class="search-sort-bar">
+    <input type="text" placeholder="Search for Nike shoes...">
+    <select>
+      <option>Sort by</option>
+      <option>Price: Low to High</option>
+      <option>Price: High to Low</option>
+      <option>Newest</option>
+    </select>
+  </div>
+
+  <div class="products">
+    <div class="product-card">
+      <img src="https://static.nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/6778226a-7b8b-460f-8f76-31271e9b207e/nike-air-max-dn.jpg" alt="Nike Air Max">
+      <h3>Nike Air Max DN</h3>
+      <p>High-performance sneaker with breathable mesh and durable design.</p>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://static.nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/758df24a-8ab6-4f74-a2a6-5b038c589bbb/nike-infinityrn-4.jpg" alt="Nike Infinity RN">
+      <h3>Nike InfinityRN 4</h3>
+      <p>Designed for running comfort with ReactX foam and Flyknit upper.</p>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <video controls>
+        <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>Featured Launch</h3>
+      <p>Watch the video to discover the next level of performance footwear.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Nike Inc. All rights reserved.</p>
+  </footer>
+</body>
+</html>
